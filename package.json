@@ -8,7 +8,7 @@
     "start": "node index.js"
   },
   "keywords": [
-    "todo"
+    "todo", "todo app", "todo_app"
   ],
   "author": "Olawale Aro",
   "license": "ISC",
