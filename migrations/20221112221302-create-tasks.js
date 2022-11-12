@@ -6,8 +6,14 @@ module.exports = {
       id: {
         allowNull: false,
         autoIncrement: true,
-        primaryKey: true,
+        unique: true,
         type: Sequelize.INTEGER
+      },
+      taskId: {
+        allowNull: false,
+        primaryKey: true,
+        unique: true,
+        type: Sequelize.STRING
       },
       listId: {
         type: Sequelize.STRING,
@@ -19,6 +25,10 @@ module.exports = {
       description: {
         allowNull: false,
         type: Sequelize.STRING
+      },
+      status: {
+        allowNull: false,
+        type: Sequelize.INTEGER
       },
       createdAt: {
         allowNull: false,

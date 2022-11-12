@@ -14,7 +14,10 @@ module.exports = (sequelize, DataTypes) => {
     }
   }
   tasks.init({
-    title: DataTypes.STRING
+    taskId: DataTypes.STRING,
+    listId: DataTypes.STRING,
+    description: DataTypes.STRING,
+    status: DataTypes.INTEGER
   }, {
     sequelize,
     modelName: 'tasks',

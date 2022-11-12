@@ -15,7 +15,7 @@ module.exports = {
         unique: true,
         type: Sequelize.STRING
       },
-      fullName: {
+      name: {
         type: Sequelize.STRING
       },
       email: {
@@ -26,16 +26,16 @@ module.exports = {
       phone: {
         allowNull: false,
         unique: true,
-        type: DataTypes.STRING,
+        type: Sequelize.STRING,
       },
       password_hash: {
-        type: DataTypes.STRING,
+        type: Sequelize.STRING,
       },
       password_salt: {
-        type: DataTypes.STRING,
+        type: Sequelize.STRING,
       },
       status: {
-        type: DataTypes.INTEGER,
+        type: Sequelize.INTEGER,
       },
       createdAt: {
         allowNull: false,

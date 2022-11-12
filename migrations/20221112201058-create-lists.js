@@ -6,6 +6,7 @@ module.exports = {
       id: {
         allowNull: false,
         autoIncrement: true,
+        unique: true,
         type: Sequelize.INTEGER
       },
       listId: {
@@ -24,6 +25,10 @@ module.exports = {
       title: {
         allowNull: false,
         type: Sequelize.STRING
+      },
+      status: {
+        allowNull: false,
+        type: Sequelize.INTEGER
       },
       createdAt: {
         allowNull: false,
