@@ -6,10 +6,23 @@ module.exports = {
       id: {
         allowNull: false,
         autoIncrement: true,
-        primaryKey: true,
         type: Sequelize.INTEGER
       },
+      listId: {
+        allowNull: false,
+        primaryKey: true,
+        unique: true,
+        type: Sequelize.STRING
+      },
+      userId: {
+        type: Sequelize.STRING,
+        references: {
+          model: 'users',
+          key: 'userId'
+        }
+      },
       title: {
+        allowNull: false,
         type: Sequelize.STRING
       },
       createdAt: {

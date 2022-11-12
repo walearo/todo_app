@@ -9,7 +9,15 @@ module.exports = {
         primaryKey: true,
         type: Sequelize.INTEGER
       },
-      title: {
+      listId: {
+        type: Sequelize.STRING,
+        references: {
+          model: 'lists',
+          key: 'listId'
+        }
+      },
+      description: {
+        allowNull: false,
         type: Sequelize.STRING
       },
       createdAt: {
